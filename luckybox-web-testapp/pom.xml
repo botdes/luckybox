@@ -49,6 +49,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring4</artifactId>
+            <version>${thymeleaf.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
@@ -69,6 +75,10 @@
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <targetPath>templates</targetPath>
+                <directory>src/main/webapp/WEB-INF/templates</directory>
             </resource>
         </resources>
 
